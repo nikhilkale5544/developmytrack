@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Travels Add Page {% endblock %}
+
+{% block content %}
+    <h2> Welcome to the Travels Add Page </h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <!--we will  create a form to add  a travellersshow-->
+{% endblock %}

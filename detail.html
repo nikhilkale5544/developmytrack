@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel List</title>
+    </head>
+    <body>
+       <h2> Travel's Detail </h2>
+       <h3> {{ travel.yourname }} </h3>
+       <h3> {{ travel.destination }} </h3>
+       <h3> {{ travel.person }} </h3> 
+       <h3> {{ travel.HowmanyDays }} </h3> 
+        {% if travel.profile_image %}
+        <img src="{{ travel.profile_image.url}}" height="300px" width="400px">
+        {% endif %}
+        {% if travel.resume %}
+         <P>Resume: <a href="{{travel.resume.url}}">{{travel.resume.name}}</a></P>
+        {% endif %}
+    <body> 
+    <body>
+</html>
